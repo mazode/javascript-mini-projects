@@ -3,13 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script></script>
 </head>
 <body>
     <div class="container">
-        <div class="heading">
-            <h3>Welcome! Convert Temperature from Celsius to Farenheit and vice versa.</h3>
+        <div class="container_1">
+            <h3>Welcome! Convert Temperature from Celsius to Farenheit and vice versa.</h3>        
+            <p>Select conversion from Celsius to Farenheit or Farenheit to Celsius</p>
         </div>
         <div class="input_field">
+            <input type="radio" name="temperature" value="option_1">
+            <label for="choice">Celsius</label>
+            <input type="radio" name="temperature" value="option_2">
+            <label for="choice">Farenheit</label>
             <form action="submit">
                 <input type="text">
                 <button>Convert</button>
