@@ -10,12 +10,14 @@
     <h1>Temperature Converter</h1>
     <input type="text" id="temperatureInput" placeholder="Enter temperature">
     <br><br>
-    <input type="radio" name="conversionType" value="Celsius to Fahrenheit" id="cToF">
-    <label for="cToF">Celsius to Fahrenheit</label>
-    
-    <input type="radio" name="conversionType" value="Fahrenheit to Celsius" id="fToC">
-    <label for="fToC">Fahrenheit to Celsius</label>
-    <br>
+    <div class="radio-group">
+        <input type="radio" name="conversionType" value="Celsius to Fahrenheit" id="cToF">
+        <label for="cToF">Celsius to Fahrenheit</label>
+    </div>
+    <div class="radio-group">
+        <input type="radio" name="conversionType" value="Fahrenheit to Celsius" id="fToC">
+        <label for="fToC">Fahrenheit to Celsius</label>
+    </div>
     <button onclick="handleRadioInput()">Convert</button>
     <br><br>
     <div id="result"></div>
