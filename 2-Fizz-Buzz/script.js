@@ -1,4 +1,4 @@
-documemt.getElementById("startButton").addEventListener("click", function() {
+document.getElementById("startButton").addEventListener("click", function() {
     const resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = "";
 
@@ -18,6 +18,6 @@ documemt.getElementById("startButton").addEventListener("click", function() {
             result.textContent = i;
         }
 
-        resultDiv.appendChild(result);
+        resultsDiv.appendChild(result);
     }
 }); 
