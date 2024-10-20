@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Simple Calculator</h1>
+    
+    <!-- Input fields for numbers -->
+    <div>
+        <label for="first-number">First number: </label>
+        <input type="number" id="first-number" placeholder="Enter first number" required>
+    </div>
+    <br>
+    <div>
+        <label for="second-number">Second number: </label>
+        <input type="number" id="second-number" placeholder="Enter second number" required>
+    </div>
+    <br>
 
+    <!-- Operation selection -->
+    <fieldset>
+        <legend>Choose an operation</legend>
+        <div>
+            <input type="radio" name="operation" id="addOp" value="addition" required>
+            <label for="addOp">Addition</label>
+        </div>
+        <div>
+            <input type="radio" name="operation" id="subOp" value="subtraction">
+            <label for="subOp">Subtraction</label>
+        </div>
+        <div>
+            <input type="radio" name="operation" id="mulOp" value="multiplication">
+            <label for="mulOp">Multiplication</label>
+        </div>
+        <div>
+            <input type="radio" name="operation" id="divOp" value="division">
+            <label for="divOp">Division</label>
+        </div>
+    </fieldset>
+    <br>
+
+    <!-- Calculate button -->
+    <button id="calculate-btn">Calculate</button>
+    
+    <!-- Results display -->
+    <div id="results" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>
